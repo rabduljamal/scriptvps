@@ -53,24 +53,8 @@ Part 1: Update dan Upgrade
   ```html
 apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
 ```
-  
-## 2.0
-Login ke VPS dan Aktifkan Root Sementara
-  ```html
-sudo su
-cd
-cd
-
 ```
 
-# 2.
-Part 2: Buat Akses Root Di VPS /Root VPS
-  <img src="https://img.shields.io/badge/Akses_Root%20VPS-green">
-Untuk Mengizinkan Root Dan Ubah Password Login di VPS Google Cloud Platform, Aws, Dan Lain-lain
-   ```html
-  wget -qO- -O vpsroot.sh https://raw.githubusercontent.com/rabduljamal/scriptvps/main/vpsroot.sh && bash vpsroot.sh
-  ```
-  
 ### 3.
 Part 3: Install Semua Layanan VPN /Install All VPN Service
   <img src="https://img.shields.io/badge/Install_Semua_Layanan_VPN%20Batch-green">
@@ -82,8 +66,6 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 * • jika tidak bisa login di vps ,gunakan port ssh
 * • 22, 2253
 
-### Jangan Lupa Traktir Kopi
-https://trakteer.id/sulaiman-l/tip
 
 ### 5. MENU, INFO ,UPDATE ,FIX
 * untuk menampilkan menu
