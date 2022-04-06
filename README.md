@@ -39,53 +39,22 @@ apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
 ```
 
 
-### 3.
+### 2.
 Part 3: Install Semua Layanan VPN /Install All VPN Service
   <img src="https://img.shields.io/badge/Install_Semua_Layanan_VPN%20Batch-green">
   ```html
 rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-get update -y && apt-get upgrade && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/rabduljamal/scriptvps/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
 ```
 
-### 4. DONE / SELESAI
+### 3. DONE / SELESAI
 * • jika tidak bisa login di vps ,gunakan port ssh
 * • 22, 2253
 
 
-### 5. MENU, INFO ,UPDATE ,FIX
-* untuk menampilkan menu
-```html
-menu
-```
-* untuk update menu dan update info
-```html
-updatemenu
-```
-* otomatis untuk memperbaiki error SSLH, WS-TLS
-```html
-sl-fix
-```
-```html
-reboot
-```
-*
-* otomatis untuk memperbaiki error Sertifikat SSL/TLS dan SUBDOMAIN
-* perbaiki error di bagian acme domain
-```html
-slhost
-```
-* untuk update Sertifikat SSL/TLS
-```html
-certv2ray
-```
-```html
-restart
-```
-*
-*
-*
 
-### 6. FIX ERROR SSLH WS
-# Auto Fix Error SSLH + WS-TLS 443
+
+### 6. FIX ERROR
+# Auto Fix Error
 * 1 • Jika terjadi error di SSLH dan SSH WS-TLS nya,gunakan script ini untuk memperbaiki nya
 ```html
 menu
@@ -100,50 +69,6 @@ menu
 ```html
 reboot
  ```
-
-
-*
-*
-*
-
-
-### 100 (Fix manual) Fix Error SSLH
-
-* Perbaiki sslh yang error di vps yang tidak support sslh
-* khusus yang vps nya tidak support sslh
-* matikan ws-tls
-```html
-systemctl stop ws-tls
-```
-* buat user sslh / edit passwd
-```html
-echo sslh:x:109:114::/nonexistent:/usr/sbin/nologin >> /etc/passwd
-```
-* note: edit passwd dan pindah sslh nya di atas vnstat
-
-* start sslh dan jalankan
-```html
-systemctl start sslh
-/etc/init.d/sslh start
-/etc/init.d/sslh restart
-```
-* lalu start ws-tls
-```html
-systemctl start ws-tls
-```
-```html
-reboot
-```
-*done
-
-
-
-# INFO Khusus SlowDNS
-• SSH Over DNS (SlowDNS)
-* untuk kecepatan nya di batasi
-* speed download 2,2 Mbps (Max Speed)
-* speed upload 100+ Mbps (Max Speed)
-* Support semua port ssh
 
 ### Fitur Script
 
