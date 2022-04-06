@@ -41,8 +41,8 @@ chmod +x /usr/local/bin/xray
 # Make Folder XRay
 mkdir -p /var/log/xray/
 #
-wget -q -O /usr/local/bin/geosite.dat "https://raw.githubusercontent.com/rabduljamal/scriptvps/main/grpc/geosite.dat"
-wget -q -O /usr/local/bin/geoip.dat "https://raw.githubusercontent.com/rabduljamal/scriptvps/main/grpc/geoip.dat"
+wget -q -O /usr/local/bin/geosite.dat "https://raw.githubusercontent.com/rabduljamal/scriptvps/master/grpc/geosite.dat"
+wget -q -O /usr/local/bin/geoip.dat "https://raw.githubusercontent.com/rabduljamal/scriptvps/master/grpc/geoip.dat"
 
 #
 cat > /etc/xray/fb-vmessgrpc.json << END
@@ -321,10 +321,10 @@ systemctl restart fb-vless-grpc
 cd /usr/bin
 
 
-wget -O fb-addgrpc "https://raw.githubusercontent.com/rabduljamal/scriptvps/main/grpc/fb-addgrpc.sh"
-wget -O fb-delgrpc "https://raw.githubusercontent.com/rabduljamal/scriptvps/main/grpc/fb-delgrpc.sh"
-wget -O fb-renewgrpc "https://raw.githubusercontent.com/rabduljamal/scriptvps/main/grpc/fb-renewgrpc.sh"
-wget -O fb-cekgrpc "https://raw.githubusercontent.com/rabduljamal/scriptvps/main/grpc/fb-cekgrpc.sh"
+wget -O fb-addgrpc "https://raw.githubusercontent.com/rabduljamal/scriptvps/master/grpc/fb-addgrpc.sh"
+wget -O fb-delgrpc "https://raw.githubusercontent.com/rabduljamal/scriptvps/master/grpc/fb-delgrpc.sh"
+wget -O fb-renewgrpc "https://raw.githubusercontent.com/rabduljamal/scriptvps/master/grpc/fb-renewgrpc.sh"
+wget -O fb-cekgrpc "https://raw.githubusercontent.com/rabduljamal/scriptvps/master/grpc/fb-cekgrpc.sh"
 
 chmod +x fb-addgrpc
 chmod +x fb-delgrpc

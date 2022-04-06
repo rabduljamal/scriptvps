@@ -19,25 +19,25 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Link Hosting Kalian Untuk Ssh Vpn
-akbarvpn="raw.githubusercontent.com/rabduljamal/scriptvps/main/ssh"
+akbarvpn="raw.githubusercontent.com/rabduljamal/scriptvps/master/ssh"
 # Link Hosting Kalian Untuk Sstp
-akbarvpnn="raw.githubusercontent.com/rabduljamal/scriptvps/main/sstp"
+akbarvpnn="raw.githubusercontent.com/rabduljamal/scriptvps/master/sstp"
 # Link Hosting Kalian Untuk Ssr
-akbarvpnnn="raw.githubusercontent.com/rabduljamal/scriptvps/main/ssr"
+akbarvpnnn="raw.githubusercontent.com/rabduljamal/scriptvps/master/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
-akbarvpnnnn="raw.githubusercontent.com/rabduljamal/scriptvps/main/shadowsocks"
+akbarvpnnnn="raw.githubusercontent.com/rabduljamal/scriptvps/master/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
-akbarvpnnnnn="raw.githubusercontent.com/rabduljamal/scriptvps/main/wireguard"
+akbarvpnnnnn="raw.githubusercontent.com/rabduljamal/scriptvps/master/wireguard"
 # Link Hosting Kalian Untuk Xray
-akbarvpnnnnnn="raw.githubusercontent.com/rabduljamal/scriptvps/main/xray"
+akbarvpnnnnnn="raw.githubusercontent.com/rabduljamal/scriptvps/master/xray"
 # Link Hosting Kalian Untuk Ipsec
-akbarvpnnnnnnn="raw.githubusercontent.com/rabduljamal/scriptvps/main/ipsec"
+akbarvpnnnnnnn="raw.githubusercontent.com/rabduljamal/scriptvps/master/ipsec"
 # Link Hosting Kalian Untuk Backup
-akbarvpnnnnnnnn="raw.githubusercontent.com/rabduljamal/scriptvps/main/backup"
+akbarvpnnnnnnnn="raw.githubusercontent.com/rabduljamal/scriptvps/master/backup"
 # Link Hosting Kalian Untuk Websocket
-akbarvpnnnnnnnnn="raw.githubusercontent.com/rabduljamal/scriptvps/main/websocket"
+akbarvpnnnnnnnnn="raw.githubusercontent.com/rabduljamal/scriptvps/master/websocket"
 # Link Hosting Kalian Untuk Ohp
-akbarvpnnnnnnnnnn="raw.githubusercontent.com/rabduljamal/scriptvps/main/ohp"
+akbarvpnnnnnnnnnn="raw.githubusercontent.com/rabduljamal/scriptvps/master/ohp"
 
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
@@ -71,12 +71,12 @@ wget https://${akbarvpnnnnnnnnn}/edu.sh && chmod +x edu.sh && ./edu.sh
 # Ohp Server
 wget https://${akbarvpnnnnnnnnnn}/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 # Install Slowdns Server
-# wget https://raw.githubusercontent.com/rabduljamal/scriptvps/main/Slowdns/install && chmod +x install && bash install
+# wget https://raw.githubusercontent.com/rabduljamal/scriptvps/master/Slowdns/install && chmod +x install && bash install
 # Informasi IP Saya dan Semua Port TCP UDP
-# wget https://raw.githubusercontent.com/rabduljamal/scriptvps/main/ipsaya.sh && chmod +x ipsaya.sh
+# wget https://raw.githubusercontent.com/rabduljamal/scriptvps/master/ipsaya.sh && chmod +x ipsaya.sh
 #
 # install xray grpc
-wget https://raw.githubusercontent.com/rabduljamal/scriptvps/main/grpc/sl-grpc.sh && chmod +x sl-grpc.sh && screen -S sl-grpc ./sl-grpc.sh
+wget https://raw.githubusercontent.com/rabduljamal/scriptvps/master/grpc/sl-grpc.sh && chmod +x sl-grpc.sh && screen -S sl-grpc ./sl-grpc.sh
 #
 
 rm -f /root/ssh-vpn.sh

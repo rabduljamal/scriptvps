@@ -25,7 +25,7 @@ service cron reload
 service cron restart
 #sl-fix
 cd /usr/bin
-wget -O sl-fix "https://raw.githubusercontent.com/rabduljamal/scriptvps/main/sslh-fix/sl-fix"
+wget -O sl-fix "https://raw.githubusercontent.com/rabduljamal/scriptvps/master/sslh-fix/sl-fix"
 chmod +x sl-fix
 sl-fix
 cd
