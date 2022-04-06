@@ -37,7 +37,7 @@ Part 1: Update dan Upgrade
   ```html
 apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
 ```
-```
+
 
 ### 3.
 Part 3: Install Semua Layanan VPN /Install All VPN Service
