@@ -91,12 +91,6 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
 ### 4. DONE / SELESAI
 <img src="https://img.shields.io/badge/DONE%20_/_%20SELESAI-green">
 
-* • jika tidak bisa login di vps ,gunakan port ssh
-* • 22, 2253
-
-### Jangan Lupa Traktir Kopi
-<a href="https://trakteer.id/sulaiman-l/tip" target="_blank"><img id="wse-buttons-preview" src="https://cdn.trakteer.id/images/embed/trbtn-red-6.png" height="40" style="border: 0px; height: 40px;" alt="Trakteer Saya"></a>
-https://trakteer.id/sulaiman-l/tip
 
 ### 5. MENU, INFO ,UPDATE ,FIX
 * untuk menampilkan menu
@@ -114,20 +108,7 @@ sl-fix
 ```html
 reboot
 ```
-* Perbaiki SSL ERROR
-* otomatis untuk memperbaiki error Sertifikat SSL/TLS dan SUBDOMAIN
-* perbaiki error di bagian acme domain
-* untuk update Sertifikat SSL/TLS
-```html
-slhost && certv2ray
-```
-* lalu restart
-```html
-restart
-```
-*
-*
-*
+
 
 ### 6. FIX ERROR SSLH WS
 # Auto Fix Error SSLH + WS-TLS 443
