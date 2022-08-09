@@ -8,13 +8,12 @@ Auto Script Install All VPN Service
 
 ## Installation 
 ## 1.
-<img src="https://img.shields.io/badge/Update%20_&_%20Upgrade-green">
 
   ```html
 apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
 ```
   
-## 2.0
+## 2
 
 * Login ke VPS dan Aktifkan Root Sementara
 
@@ -36,7 +35,6 @@ rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-
   
 
 ### 4. DONE / SELESAI
-<img src="https://img.shields.io/badge/DONE%20_/_%20SELESAI-green">
 
 
 ### 5. MENU, INFO ,UPDATE ,FIX
@@ -74,66 +72,7 @@ menu
 reboot
  ```
 
-### 7. Info Websocket
-* Websocket harus menggunakan subdomain/domain dan sudah di pointing di cloudflare (CDN CLOUDFLARE)
-* Tanpa subdomain/domain mustahil bisa terhubung dengan bug yang berasal dari cloudflare
-*
-*
-*
 
-### 8. Edit Port SSL WS atau Ganti Port SSL(Manual)
-* ubah port yg mau di ubah ,jika 443 silahkan ubah tulisan yang ada 443
-* setelah di edit lalu di simpan (CTRL+X+Y dan enter)
-
-```html
-nano /etc/systemd/system/ws-tls.service
- ```
-```html
-nano /usr/local/bin/ws-tls
- ```
-```html
-nano /etc/default/sslh
- ```
-```html
-nano /etc/stunnel5/stunnel5.conf
- ```
-
-### 100 (Fix manual) Fix Error SSLH
-
-* Perbaiki sslh yang error di vps yang tidak support sslh
-* khusus yang vps nya tidak support sslh
-* matikan ws-tls
-```html
-systemctl stop ws-tls
-```
-* buat user sslh / edit passwd
-```html
-echo sslh:x:109:114::/nonexistent:/usr/sbin/nologin >> /etc/passwd
-```
-* note: edit passwd dan pindah sslh nya di atas vnstat
-
-* start sslh dan jalankan
-```html
-systemctl start sslh
-/etc/init.d/sslh start
-/etc/init.d/sslh restart
-```
-* lalu start ws-tls
-```html
-systemctl start ws-tls
-```
-```html
-reboot
-```
-*done
-
-
-
-# INFO Khusus SlowDNS
-• SSH Over DNS (SlowDNS)
-* untuk kecepatan nya di batasi
-* speed download 4 Mbps (Max Speed)
-* Support semua port ssh
 
 ### Fitur Script
 
@@ -193,11 +132,7 @@ reboot
 
 • Auto Update
 
-### Os Supported
 
-• Debian 10 & 9
-
-• Ubuntu 18.04 & 20.04
 
 # Service & Port
 
